@@ -255,7 +255,10 @@ table {
         margin-bottom: 2rem;
         width: 90%;
         transform: rotate(0);
-        -webkit-transform: rotate(0); } }
+        -webkit-transform: rotate(0);
+        overflow-y: scroll;
+        /* has to be scroll, not auto */
+        -webkit-overflow-scrolling: touch; } }
     #site #writing_container a {
       position: relative;
       display: block;
@@ -265,6 +268,11 @@ table {
       /*border-bottom: 2px solid #fff;*/
       width: 100%;
       margin-bottom: 1rem; }
+      @media screen and (max-width: 740px) {
+        #site #writing_container a {
+          padding: 0 1rem;
+          margin-top: 1rem;
+          margin-bottom: 1rem; } }
       #site #writing_container a:hover {
         cursor: url(../image/link.png) 35 35, pointer;
         background-color: #ff0; }
@@ -274,6 +282,9 @@ table {
         display: inline-block; }
         #site #writing_container a p.title {
           width: 80%; }
+          @media screen and (max-width: 740px) {
+            #site #writing_container a p.title {
+              width: 100%; } }
         #site #writing_container a p.date {
           position: absolute;
           right: 0.3rem;
