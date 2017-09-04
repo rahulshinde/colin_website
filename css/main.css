@@ -121,7 +121,7 @@ table {
   padding-bottom: 3rem;
   background-color: white; }
   @media screen and (max-width: 740px) {
-    #site {
+    #site.homepage {
       padding-bottom: 90vh; } }
   #site #background {
     position: fixed;
@@ -457,6 +457,14 @@ table {
   font-family: 'Sacramento', cursive;
   font-size: 1.2rem;
   letter-spacing: 0.3em; }
+  @media screen and (max-width: 740px) {
+    #site #archive_title {
+      top: 0;
+      left: 0;
+      padding-top: 0.4rem;
+      padding-bottom: 0.2rem;
+      width: 100%;
+      text-align: center; } }
 #site #home_link {
   position: fixed;
   top: 4.5rem;
@@ -464,6 +472,12 @@ table {
   font-family: 'Titillium Web', sans-serif;
   font-size: 0.7rem;
   /*letter-spacing: 0.3em;*/ }
+  @media screen and (max-width: 740px) {
+    #site #home_link {
+      top: auto;
+      left: 0;
+      width: 100%;
+      text-align: center; } }
   #site #home_link a {
     color: #00f;
     text-decoration: underline; }
@@ -473,6 +487,10 @@ table {
   display: block;
   width: 60%;
   margin: 0rem auto 5rem auto; }
+  @media screen and (max-width: 740px) {
+    #site .archive_image_container {
+      width: 90%;
+      margin: 2rem auto 0 auto; } }
   #site .archive_image_container img {
     display: block;
     width: 100%; }
@@ -485,19 +503,33 @@ table {
     font-family: 'Titillium Web', sans-serif;
     font-size: 0.7rem; }
 
+#site.writing {
+  padding-top: 0; }
 #site #writing_heading {
   display: inline-block;
   margin-left: 1rem;
   font-family: 'Sacramento', cursive;
   background-color: #ff0;
   letter-spacing: 0.3em;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  line-height: 1.1em; }
+  @media screen and (max-width: 740px) {
+    #site #writing_heading {
+      width: 100%;
+      margin-left: 0;
+      padding-top: 0.3rem;
+      text-align: center; } }
 #site #back_to_home {
   margin-left: 1rem;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
   font-family: 'Titillium Web', sans-serif;
   font-size: 0.7rem; }
+  @media screen and (max-width: 740px) {
+    #site #back_to_home {
+      width: 100%;
+      text-align: center;
+      margin-left: 0; } }
   #site #back_to_home a {
     color: #00f;
     text-decoration: underline; }
@@ -510,14 +542,23 @@ table {
   font-family: 'Titillium Web', sans-serif;
   font-size: 0.7rem;
   line-height: 1.2em; }
+  @media screen and (max-width: 740px) {
+    #site .writing_text_block {
+      width: 90%;
+      margin: 1rem 0;
+      margin-left: 5%; } }
 #site .writing_image_wrap {
   margin-left: 10%;
   width: 35%;
   transition: width ease 0.3s; }
+  @media screen and (max-width: 740px) {
+    #site .writing_image_wrap {
+      width: 90%;
+      margin-left: 5%; } }
   #site .writing_image_wrap:hover {
     cursor: url(../image/zoom.png) 35 35, pointer; }
   #site .writing_image_wrap.huge {
-    width: 80%; }
+    width: 90%; }
     #site .writing_image_wrap.huge:hover {
       cursor: url(../image/close.png) 35 35, pointer; }
   #site .writing_image_wrap img {
