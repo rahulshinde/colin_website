@@ -2,6 +2,7 @@ Site = {}
 
 $(document).ready( function(){
   $('.homepage_image_container').on('click', Site.toggleImageSize);
+  $('.writing_image_wrap').on('click', Site.toggleImageSize);
   $('#archive_link').on('click', Site.showArchive);
   $('#info_link').on('mouseenter', function(){
     $('#info_container').addClass('show');
@@ -20,5 +21,5 @@ Site.toggleImageSize = function(){
 }
 
 Site.showArchive = function(){
-  $(this).addClass('show');
+  $(this).toggleClass('show');
 }
