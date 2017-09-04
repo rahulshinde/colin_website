@@ -28,4 +28,11 @@ Site.toggleImageSize = function(){
 
 Site.showArchive = function(){
   $(this).toggleClass('show');
+  var text = $('#archive_text').text();
+  console.log(text);
+    if (text == 'close'){
+      $('#archive_text').html('archive');
+    } else{
+      $('#archive_text').html('close');
+    }
 }
