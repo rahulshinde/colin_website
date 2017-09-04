@@ -13,6 +13,12 @@ $(document).ready( function(){
 
   $('#writing_link').on('click', function(){
     $('nav').toggleClass('show');
+    var text = $(this).text();
+    if (text == 'close'){
+      $(this).html('writing');
+    } else{
+      $(this).html('close');
+    }
   });
 })
 

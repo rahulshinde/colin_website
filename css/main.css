@@ -177,8 +177,8 @@ table {
         @media screen and (max-width: 740px) {
           #site header #marquee_container h2 {
             line-height: 2.2rem;
-            width: 17rem;
-            font-size: 0.9rem; } }
+            width: 22rem;
+            font-size: 1.2rem; } }
         #site header #marquee_container h2:nth-child(1) {
           /* Starting position */
           -moz-transform: translateX(100%);
@@ -216,7 +216,7 @@ table {
         border-bottom: 1px solid #000;
         border-top: 0;
         z-index: 100;
-        max-height: 2rem; } }
+        max-height: 2.2rem; } }
     #site nav.show {
       max-height: 18rem; }
       @media screen and (max-width: 740px) {
@@ -238,7 +238,7 @@ table {
     @media screen and (max-width: 740px) {
       #site li {
         margin: 0.5rem 1rem;
-        font-size: 0.9rem; } }
+        font-size: 1.2rem; } }
   #site #writing_container {
     clear: both;
     display: block;
@@ -391,7 +391,7 @@ table {
         right: 0;
         left: 0;
         border: 0;
-        max-height: 2rem;
+        max-height: 2.2rem;
         padding: 0.5rem 0;
         z-index: 50;
         overflow: hidden;
@@ -412,7 +412,7 @@ table {
       @media screen and (max-width: 740px) {
         #site #archive_link p {
           text-align: center;
-          font-size: 0.9rem;
+          font-size: 1.2rem;
           letter-spacing: 0.3em; } }
     #site #archive_link a {
       text-align: left;
@@ -423,7 +423,9 @@ table {
       color: #00f; }
       @media screen and (max-width: 740px) {
         #site #archive_link a {
-          text-align: center; } }
+          text-align: center;
+          line-height: 1.3em;
+          margin-bottom: 0.5rem; } }
       #site #archive_link a:hover {
         cursor: url(../image/link.png) 35 35, pointer; }
   #site #info_container {
