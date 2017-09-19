@@ -11,16 +11,20 @@ $(document).ready( function(){
     $('#info_container').removeClass('show');
   });
 
-  $('#writing_link').on('click', function(){
-    $('nav').toggleClass('show');
-    var text = $(this).text();
-    if (text == 'close'){
-      $(this).html('writing');
-    } else{
-      $(this).html('close');
-    }
-  });
+  $('#writing_link').on('click', Site.toggleWritingContainer);
+  $('#writing_close_container').on('click', Site.toggleWritingContainer);
 })
+
+Site.toggleWritingContainer = function(){
+  $('nav').toggleClass('show');
+  $('#writing_close_container').toggleClass('show');
+  var text = $('#writing_link').text();
+  if (text == 'close'){
+    $('#writing_link').html('writing');
+  } else{
+    $('#writing_link').html('close');
+  }
+}
 
 Site.toggleImageSize = function(){
   $(this).toggleClass('huge');
