@@ -317,10 +317,12 @@ table {
               display: none; } }
   #site #info_link {
     float: right; }
-    #site #info_link:hover {
+    #site #info_link a {
+      text-decoration: none; }
+    #site #info_link a:hover {
       cursor: url(../image/question.png) 35 35, pointer; }
       @media screen and (max-width: 740px) {
-        #site #info_link:hover {
+        #site #info_link a:hover {
           cursor: pointer; } }
   #site #writing_link {
     float: left; }
